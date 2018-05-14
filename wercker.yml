@@ -1,8 +1,7 @@
 box: mozkurt27/testservice:latest
 build:
      steps:
-      occs_user: "User10" 
-      debug:
+      occs_user: "User10"
       docker_image_name:"mozkurt27/testservice:latest"
       service_id:gse00002323
       deployment_name:ImageUpload
