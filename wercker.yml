@@ -1,4 +1,4 @@
-box: wercker/default
+box: mozkurt27/testservice:latest
 build:
     steps:
         - shellcheck:
