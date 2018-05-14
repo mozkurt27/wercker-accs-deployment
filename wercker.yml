@@ -1,10 +1,5 @@
 box: mozkurt27/testservice:latest
 build:
      steps:
-    # Manage Oracle Container Cloud Service container
-    - peternagy/oracle-occs-container-util:
-        occs_user: $OCCS_USERNAME
-        occs_password: $OCCS_PASSWORD
-        rest_server_url: $OCCS_REST_SERVER_URL
-        function: start
-		deployment_name: javacro17
+        - shellcheck:
+            files: run.sh
