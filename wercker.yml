@@ -1,7 +1,6 @@
 box: mozkurt27/testservice:latest
 build:
      steps:
-     - mozkurt27/oracle-occs-container-util@1.0.0:
       occs_user: "User10" 
       debug:
       docker_image_name:"mozkurt27/testservice:latest"
