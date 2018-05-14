@@ -1,5 +1,12 @@
 box: mozkurt27/testservice:latest
 build:
-    steps:
-        - shellcheck:
-            files: run.sh
+     steps:
+     - mozkurt27/oracle-occs-container-util@1.0.0:
+      occs_user: "User10" 
+      debug:
+      docker_image_name:"mozkurt27/testservice:latest"
+      service_id:gse00002323
+      deployment_name:ImageUpload
+      function:start
+      rest_server_url:"https://myservices.emea.oraclecloud.com/mycloud/cloudportal/dashboard"
+      occs_password:Marg0t20066
