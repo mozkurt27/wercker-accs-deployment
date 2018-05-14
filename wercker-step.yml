@@ -1,0 +1,35 @@
+name: oracle-occs-container-util
+version: 1.0.0
+description: Wercker step to manage Oracle Container Cloud Service container.
+keywords:
+  - oracle
+  - container cloud
+  - manage
+  - start
+  - stop
+  - restart
+properties:
+  occs_user:
+    type: string
+    required: true
+  occs_password:
+    type: string
+    required: true
+  rest_server_url:
+    type: string
+    required: true
+  function:
+    type: string
+    required: true
+  deployment_name:
+    type: string
+    required: false
+  service_id:
+    type: string
+    required: false
+  docker_image_name:
+    type: string
+    required: false
+  debug:
+    type: string
+    required: false
